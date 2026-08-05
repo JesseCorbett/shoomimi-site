@@ -177,7 +177,7 @@ body {
 
 .profile-tagline {
   font-size: 1rem;
-  color: var(--text-muted);
+  color: white;
   font-weight: 500;
   margin-bottom: 1.25rem;
   display: flex;
