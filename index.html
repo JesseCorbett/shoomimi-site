@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoomimi 🧠⚡ | Lab Links</title>
+  <meta name="description" content="Brain in a Jar VTuber • Gaming & Chaos!">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shoomimi 🧠⚡ | Lab Links">
+  <meta property="og:description" content="Brain in a Jar VTuber • Gaming & Chaos!">
+  <meta property="og:image" content="shoomimi.png">
+
+  <!-- Google Fonts: Fredoka (Headings), Plus Jakarta Sans (Body), Space Mono (Lab Code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <script type="module">
+    import { createShader } from 'https://esm.sh/shaders/js'
+
+    const canvas = document.getElementById("canvas")
+
+    const shader = await createShader(canvas, {
+      components: [
+        {
+          type: 'Dither',
+          id: 'idmkexsirpuqme310ag',
+          props: {
+            colorA: '#02171a',
+            colorB: '#00CAC2',
+            pattern: 'bayer8',
+            pixelSize: 12,
+            threshold: 0.4,
+          },
+          children: [
+            {
+              type: 'Plasma',
+              id: 'idmmfg1q5n457lbjyqz',
+              props: {
+                colorA: '#ffffff',
+                contrast: 0.9,
+                density: 0.3,
+                intensity: 1.3,
+                speed: 1,
+                stops: [{
+                  color: '#ffffff',
+                  position: 0
+                }, {
+                  color: '#000000',
+                  position: 1
+                }],
+              },
+            },
+            {
+              type: 'WaveDistortion',
+              id: 'idmkexyi4bvi04l95hr',
+              props: {
+                angle: 117,
+                edges: 'mirror',
+                strength: 1,
+                visible: true,
+                waveType: 'square',
+              },
+            },
+          ],
+        },
+        {
+          type: 'GridDistortion',
+          id: 'idmsgppwu73b2jcfeie',
+          props: {
+            gridSize: 8,
+          },
+        }
+      ]
+    })
+
+    window.addEventListener('resize', () => {
+      canvas.style = 'width: 100vw; height: 100dvh;'
+      shader.resize()
+    })
+  </script>
+</head>
+
+<body>
+
+  <canvas id="canvas" style="width: 100vw; height: 100dvh;"></canvas>
+
+  <!-- Main Content Container -->
+  <main class="container">
+
+    <!-- Profile Header Section -->
+    <header class="profile-header">
+      <div class="avatar-wrapper">
+        <div class="avatar-glow"></div>
+        <div class="avatar-frame">
+          <img src="shoomimi.png" alt="shoomimi mad scientist chibi streamer avatar" class="avatar-img" width="160"
+            height="160">
+        </div>
+      </div>
+
+      <h1 class="profile-title">Shoomimi</h1>
+      <p class="profile-tagline">
+        Brain in a Jar <span class="brain-icon">🧠⚡</span>
+      </p>
+    </header>
+
+    <!-- Links Stack Section -->
+    <section class="links-section" aria-label="Official Lab Links">
+
+      <!-- Twitch Link -->
+      <a href="https://twitch.tv/shoomimi" class="link-card twitch" target="_blank" rel="noopener noreferrer">
+        <div class="link-left">
+          <div class="icon-box">
+            <!-- Twitch Icon SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M11.571 4.714h1.715v5.143H11.57V4.714zm4.715 0H18v5.143h-1.714V4.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0H6zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714v9.429z" />
+            </svg>
+          </div>
+          <div class="link-content">
+            <span class="link-title">Twitch</span>
+            <span class="link-subtitle">twitch.tv/shoomimi</span>
+          </div>
+        </div>
+        <div class="link-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </div>
+      </a>
+
+      <!-- YouTube Link -->
+      <a href="https://www.youtube.com/@shoomimivods" class="link-card youtube" target="_blank"
+        rel="noopener noreferrer">
+        <div class="link-left">
+          <div class="icon-box">
+            <!-- YouTube Icon SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+          </div>
+          <div class="link-content">
+            <span class="link-title">YouTube</span>
+            <span class="link-subtitle">VOD Archive</span>
+          </div>
+        </div>
+        <div class="link-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </div>
+      </a>
+
+      <!-- Twitter / X Link -->
+      <a href="https://twitter.com/shoomimishoom" class="link-card twitter" target="_blank" rel="noopener noreferrer">
+        <div class="link-left">
+          <div class="icon-box">
+            <!-- X / Twitter Icon SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </div>
+          <div class="link-content">
+            <span class="link-title">Twitter / X</span>
+            <span class="link-subtitle">@Shoomimishoom</span>
+          </div>
+        </div>
+        <div class="link-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </div>
+      </a>
+
+      <!-- TikTok Link -->
+      <a href="https://tiktok.com/@shoomimi" class="link-card tiktok" target="_blank" rel="noopener noreferrer">
+        <div class="link-left">
+          <div class="icon-box">
+            <!-- TikTok Icon SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+            </svg>
+          </div>
+          <div class="link-content">
+            <span class="link-title">TikTok</span>
+            <span class="link-subtitle">Stream Clips</span>
+          </div>
+        </div>
+        <div class="link-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </div>
+      </a>
+
+      <!-- Business Inquiry / Email -->
+      <a href="mailto:shoomimishoom@gmail.com" class="link-card business">
+        <div class="link-left">
+          <div class="icon-box">
+            <!-- Mail Icon SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+              stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="5" width="20" height="14" rx="2" ry="2" />
+              <path d="M2 7l10 6 10-6" />
+            </svg>
+          </div>
+          <div class="link-content">
+            <span class="link-title">Lab Inquiries</span>
+            <span class="link-subtitle">shoomimishoom@gmail.com</span>
+          </div>
+        </div>
+        <div class="link-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </div>
+      </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2026 shoomimi <span class="footer-brain">🧠⚡</span></p>
+    </footer>
+
+  </main>
+
+</body>
+
+</html>
