@@ -240,7 +240,7 @@ body {
 .link-card.twitch:hover { border-color: rgba(145, 70, 255, 0.6); box-shadow: 0 0 18px rgba(145, 70, 255, 0.25); }
 .link-card.youtube:hover { border-color: rgba(255, 0, 0, 0.6); box-shadow: 0 0 18px rgba(255, 0, 0, 0.25); }
 .link-card.twitter:hover { border-color: rgba(29, 161, 242, 0.6); box-shadow: 0 0 18px rgba(29, 161, 242, 0.25); }
-.link-card.tiktok:hover { border-color: rgba(255, 94, 126, 0.6); box-shadow: 0 0 18px rgba(255, 94, 126, 0.25); }
+.link-card.tiktok:hover { border-color: #00f2ea99; box-shadow: 0 0 18px #ff005099; }
 .link-card.business:hover { border-color: var(--accent-cyan); box-shadow: 0 0 18px var(--accent-cyan-glow); }
 
 .link-left {
@@ -277,7 +277,7 @@ body {
 .twitch .icon-box { color: #a970ff; }
 .youtube .icon-box { color: #ff4d4d; }
 .twitter .icon-box { color: #38bdf8; }
-.tiktok .icon-box { color: #ff7597; }
+.tiktok .icon-box { color: #ffffff; }
 .business .icon-box { color: var(--accent-cyan); }
 
 .link-content {
